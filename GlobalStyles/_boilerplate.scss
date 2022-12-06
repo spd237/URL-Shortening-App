@@ -1,0 +1,48 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.65rem;
+  color: var(--Very-Dark-Violet);
+  margin: 2rem 1rem 0.7rem 1rem;
+  @media (min-width: 800px) {
+    margin-left: 0;
+    text-align: left;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    max-width: 70%;
+  }
+}
+
+h3 {
+  color: var(--Very-Dark-Violet);
+  @media (min-width: 800px) {
+    margin-right: auto;
+  }
+}
+
+li {
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  @media (min-width: 800px) {
+    text-align: left;
+  }
+}
+
+li:hover {
+  color: var(--Cyan);
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>URL Shortening</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="./images/logo.svg" alt="company-logo" class="header__logo">
+        <div class="header__menu-btn">
+            <div class="header__menu-btn-burger"></div>
+        </div>
+        <nav class="mobile-nav hidden">
+            <ul class="mobile-nav__list">
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+            </ul>
+            <ul class="mobile-nav__list">
+                <li class="login">Login</li>
+                <li>
+                    <button class="sign-up-btn">Sign Up</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="landing">
+            <img src="./images/illustration-working.svg" alt="illustration" class="landing__illustration">
+            <div class="landing__content">
+                <h1>More than just shorter links</h1>
+                <p class="landing__content-description">Build your brand's recognition and get detailed insights on how
+                    your links
+                    are performing.</p>
+                <button class="landing__content-button">Get Started</button>
+            </div>
+
+        </section>
+
+        <div class="shorten-wrapper">
+            <div class="shorten-link">
+                <label for="link-input"></label>
+                <input type="text" name="link-shortener" id="link-input" class="shorten-link__input"
+                    placeholder="Shorten a link here...">
+                <button class="shorten-link__button">Shorten It!</button>
+            </div>
+
+
+            <div class="shortened">
+                <span class="original-link">https://twitter.com/frontendmentor</span>
+                <span class="shortened__link">https://rel.ink/gob3X9</span>
+                <button class="shortened__button">Copy</button>
+            </div>
+
+        </div>
+
+
+
+        <section class="features">
+            <h2 class="features__header">Advanced Statistics</h1>
+                <p class="features__description">Track how your links are performing across the web with our advanced
+                    statistics dashboard</p>
+
+                <div class="features__wrapper">
+                    <article class="features__feature">
+                        <div class="features__feature-logo">
+                            <img src="./images/icon-brand-recognition.svg" alt="icon">
+                        </div>
+                        <h3>Brand Recognition</h3>
+                        <p class="features__feature-description">Boost your brand recognition with each click.
+                            Generic links don't mean a thing. Branded links help instil confidence in your content</p>
+                    </article>
+
+                    <article class="features__feature line reposition1">
+                        <div class="features__feature-logo">
+                            <img src="./images/icon-detailed-records.svg" alt="icon">
+                        </div>
+                        <h3>Detailed Records</h3>
+                        <p class="features__feature-description">Gain insights into who is clicking your links.
+                            Knowing when and where people engage with your content helps inform better decisions.</p>
+                    </article>
+
+                    <article class="features__feature line reposition2">
+                        <div class=" features__feature-logo">
+                            <img src="./images/icon-fully-customizable.svg" alt="icon" class="resize">
+                        </div>
+                        <h3>Fully Customizable</h3>
+                        <p class="features__feature-description">Improve brand awareness and content
+                            discoverability through customizable links, superchargin audience engagement.</p>
+                    </article>
+                </div>
+        </section>
+
+        <div class="boost">
+            <h2 class="boost__header">Boost your links today</h2>
+            <button class="boost__button">Get Started</button>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <img src="./images/logo.svg" alt="Shortly-Logo" class="footer__logo">
+        <div class="footer__section">
+            <span class="footer__section-header">Features</span>
+            <ul class="footer__section-nav">
+                <li>Link Shortening</li>
+                <li>Branded Links</li>
+                <li>Analytics</li>
+            </ul>
+        </div>
+        <div class="footer__section">
+            <span class="footer__section-header">Resources</span>
+            <ul class="footer__section-nav">
+                <li>Blog</li>
+                <li>Developers</li>
+                <li>Support</li>
+            </ul>
+        </div>
+        <div class="footer__section">
+            <span class="footer__section-header">Company</span>
+            <ul class="footer__section-nav">
+                <li>About</li>
+                <li>Our Team</li>
+                <li>Careers</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="icons">
+            <img src="./images/icon-facebook.svg" alt="facebook" class="social-icons">
+            <img src="./images/icon-twitter.svg" alt="twitter" class="social-icons">
+            <img src="./images/icon-pinterest.svg" alt="pinterest" class="social-icons">
+            <img src="./images/icon-instagram.svg" alt="instagram" class="social-icons">
+
+    </footer>
+</body>
+
+</html>

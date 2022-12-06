@@ -1,0 +1,134 @@
+.features {
+  background-color: rgb(245, 245, 245);
+  padding: 10rem 2rem 0.1rem 2rem;
+
+  &__header {
+    text-align: center;
+    color: var(--Very-Dark-Violet);
+  }
+
+  &__description {
+    color: var(--Grayish-Violet);
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0.85rem auto 5rem auto;
+    @media (min-width: 800px) {
+      max-width: 30%;
+    }
+  }
+
+  &__wrapper {
+    margin-bottom: 5rem;
+    @media (min-width: 800px) {
+      display: flex;
+      flex-direction: row;
+      gap: 2.5rem;
+      margin: auto 8rem 5rem 8rem;
+    }
+  }
+
+  &__feature {
+    background-color: white;
+    padding: 3.5rem 1.5rem 1rem 1.5rem;
+    margin-bottom: 5rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+    &-logo {
+      background-color: var(--Dark-Violet);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      border-radius: 50%;
+      padding: 1rem;
+      position: absolute;
+      top: -2.5rem;
+      @media (min-width: 800px) {
+        left: 2rem;
+      }
+    }
+
+    &-description {
+      color: var(--Grayish-Violet);
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin: 0.8rem auto;
+      line-height: 1.5rem;
+      @media (min-width: 800px) {
+        text-align: left;
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+
+.resize {
+  width: 40px;
+  height: 40px;
+}
+
+.reposition1 {
+  margin: 2.5rem auto;
+}
+.reposition2 {
+  margin: 5rem auto auto auto;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  background-color: var(--Cyan);
+  height: 0.5rem;
+  width: 5rem;
+  transform: rotate(90deg);
+  top: -2.75rem;
+
+  @media (min-width: 800px) {
+    transform: rotate(0deg);
+    top: 5rem;
+    left: -2.5rem;
+    width: 2.5rem;
+  }
+}
+
+.boost {
+  background-color: var(--Dark-Violet);
+  background-image: url(./images/bg-boost-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 800px) {
+    background-image: url(./images/bg-boost-desktop.svg);
+    background-size: cover;
+  }
+
+  &__header {
+    color: white;
+    text-align: center;
+  }
+  &__button {
+    background-color: var(--Cyan);
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    border-style: none;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    padding: 0.75rem 2.75rem;
+    cursor: pointer;
+  }
+}
